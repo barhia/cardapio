@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    background-color: bisque;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;          
+    justify-content: center;
+    align-items: center;     
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 15px;
+}
+.produtoslista {
+    text-align: center;
+    flex-direction: column; 
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.produtoslista h3 {
+    margin-top: 30px;
+}
+button {
+    background-color: #4CAF50;   
+    color: white;                 
+    padding: 15px 32px;           
+    border: none;                 
+    border-radius: 25px;          
+    font-size: 16px;              
+    font-weight: bold;            
+    text-transform: uppercase;    
+    cursor: pointer;             
+    transition: all 0.3s ease;    
+    margin: 0 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;  
+    color: inherit;         
+    background-color: transparent; 
+}
+
+.cerveja600 {
+    width: 100%; 
+    max-width: 350px; 
+    height: auto; 
+}
+
+.produtos {
+    text-align: center;
+    margin-top: 70px;
+    display: grid;                  
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;  
+    margin-bottom: 50px;
+    padding: 0 10px; 
+
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+    .produtos {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+    .foto {
+        width: 100%;
+        height: auto;
+        max-width: 100%; 
+    }
+}
